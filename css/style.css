@@ -1,0 +1,117 @@
+/*
+Author: Chase Durbin
+Date: 03-16-2023
+File name: style.class
+*/
+
+/* ----CSS Reset---- */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* ----Body Style Rules---- */
+body {
+    background-color: #363636;
+}
+
+
+/* ----Header Style Rules----*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ----Nav Style Rules---- */
+nav {
+    padding: 1%;
+    padding-top: 0;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 2px solid black;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li:last-child {
+    border-bottom: 2px solid black;
+}
+
+/* ----Show Mobile Class, hide others---- */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* ----Main Content Style Rules---- */
+main {
+    padding: 1% 4% 1% 4%;
+    text-align: center;
+    font-size: 1.15em;
+    color: white;
+    font-family: 'Sono', sans-serif;
+}
+
+main p {
+    border: 2px solid black;
+    padding: 5%;
+}
+
+main h3 {
+    border: 2px solid black;
+    padding: 5%;
+    color: #006A4E;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+}
+
+main a {
+    text-decoration: none;
+}
+
+
+/* ----Footer Style Rules---- */
+footer p {
+    border-top: 1px solid black;
+    font-size: 0.6em;
+    color: #FAF9F6;
+    text-align: center;
+    padding: 5px 1em;
+    font-family: 'Sono', sans-serif;
+}
