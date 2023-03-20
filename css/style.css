@@ -105,6 +105,19 @@ main a {
     text-decoration: none;
 }
 
+main h1 {
+    padding: 5%;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#labPic {
+    width: 89%;
+    border: 2px solid black;
+    padding: 5%;
+}
+
 
 /* ----Footer Style Rules---- */
 footer p {
