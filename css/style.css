@@ -148,8 +148,18 @@ main h1 {
     padding-bottom: 0;
 }
 
+#promo {
+    width: 840px;
+    height: 472px;
+    margin: 0 auto;
+}
+
+#promocontainer {
+    text-align: center;
+}
+
 .rounded {
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .mail-link {
@@ -175,20 +185,28 @@ footer p {
 }
 
 
-@media screen and (min-width: 1015px),
+@media screen and (min-width: 900px),
 print {
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
     header {
         float: left;
         position: relative;
-        width: 45%;
+        width: 68%;
         margin-bottom: 10%;
     }
 
     nav {
         float: right;
         width: 25%;
-        margin: 0.5em 1em 0 0;
-        padding-right: 10%;
+        margin: 0.5em 3em 0 0;
+        padding-right: 0;
         font-size: 1.3em;
     }
 
@@ -198,6 +216,7 @@ print {
 
     nav li {
         border: none;
+        display: inline-block;
     }
 
     nav li:last-child {
@@ -211,5 +230,34 @@ print {
     main {
         clear: left;
         font-size: 2em;
+    }
+
+    .divborder {
+        border: none;
+    }
+
+    /* more info page, three column layout */
+    #sports,
+    #club,
+    #events {
+        width: 27%;
+        float: left;
+        margin: 0 2%;
+        padding: 0 1% 5% 1%;
+    }
+
+    #hook {
+        clear: left;
+        font-size: 1.2em;
+    }
+
+    .list {
+        font-size: 0.7em;
+    }
+
+    footer p {
+        font-size: 0.75em;
+        position: relative;
+        bottom: 0;
     }
 }
