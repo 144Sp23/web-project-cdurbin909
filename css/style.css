@@ -87,13 +87,27 @@ main {
     font-family: 'Sono', sans-serif;
 }
 
-main p {
+.textborder {
     border: 2px solid black;
     padding: 5%;
 }
 
+.divborder {
+    border: 2px solid black;
+    padding: 5%;
+    margin: 5% 0% 5% 0%;
+}
+
 main h3 {
     border: 2px solid black;
+    padding: 5%;
+    color: #006A4E;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+}
+
+main h4 {
     padding: 5%;
     color: #006A4E;
     font-size: 1.5em;
@@ -118,13 +132,84 @@ main h1 {
     padding: 5%;
 }
 
+#loc {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+#discord {
+    padding-top: 0;
+}
+
+#contacth1 {
+    font-family: 'Sono', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: #006A4E;
+    display: block;
+}
+
+.mail-link a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
 
 /* ----Footer Style Rules---- */
 footer p {
     border-top: 1px solid black;
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: #FAF9F6;
     text-align: center;
     padding: 5px 1em;
     font-family: 'Sono', sans-serif;
+}
+
+
+@media screen and (min-width: 1015px),
+print {
+    header {
+        float: left;
+        position: relative;
+        width: 45%;
+        margin-bottom: 10%;
+    }
+
+    nav {
+        float: right;
+        width: 25%;
+        margin: 0.5em 1em 0 0;
+        padding-right: 10%;
+        font-size: 1.3em;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li:last-child {
+        border: none;
+    }
+
+    nav li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        clear: left;
+        font-size: 2em;
+    }
 }
